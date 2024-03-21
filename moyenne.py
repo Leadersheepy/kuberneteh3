@@ -1,14 +1,14 @@
-def calcul_moyenne(valeurs):
-    if len(valeurs) == 0:
+def calculer_moyenne(liste):
+    if not liste:
         return 0
-    return sum(valeurs) / len(valeurs)
+    return sum(liste) / len(liste)
 
+def test_calculer_moyenne():
+    assert calculer_moyenne([1, 2, 3, 4, 5]) == 3
+    assert calculer_moyenne([]) == 0
+    assert calculer_moyenne([0, 0, 0, 0]) == 0
+    assert calculer_moyenne([-1, 1]) == 0
 
-# Tests unitaires avec pytest
-import pytest
-
-def test_calcul_moyenne():
-    assert calcul_moyenne([1, 2, 3, 4, 5]) == 3
-    assert calcul_moyenne([0, 0, 0, 0, 0]) == 0
-    assert calcul_moyenne([10, 20, 30, 40, 50]) == 30
-    assert calcul_moyenne([]) == 0  # Test avec une liste vide
+if __name__ == "__main__":
+    test_calculer_moyenne()
+    print("Tous les tests ont réussi.")
