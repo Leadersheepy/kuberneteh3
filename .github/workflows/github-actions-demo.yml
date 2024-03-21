@@ -16,3 +16,8 @@ jobs:
           python-version: '3.x'
       - name: Execute Python script
         run: python job.py
+
+      - name: Install dependencies
+        run: pip install pytest
+      - name: Run tests
+        run: pytest moyenne.py
