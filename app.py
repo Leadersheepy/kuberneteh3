@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Bienvenue sur l'API de mon projet"
+    return "Bienvenue sur l'API de mon projet : coucou ! "
 
 @app.route('/get', methods=['GET'])
 def get_endpoint():
