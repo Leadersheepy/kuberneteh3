@@ -14,6 +14,6 @@ RUN pip3 install Flask
 # Exposer le port sur lequel l'application Flask écoute
 EXPOSE 5000
 
-# Définir la commande par défaut pour exécuter l'application Flask
+# Définir la commande par défaut pour exécuter l'application  Flask
 CMD ["python", "app.py"]
 
