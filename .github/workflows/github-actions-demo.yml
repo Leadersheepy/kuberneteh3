@@ -34,7 +34,7 @@ jobs:
 
       - name: Azure Login and AKS Set Context
         run: |
-          az login -u ${{ secrets.AZURE_USERNAME }} --service-principal -p {{ secrets.AZURE_PASSWORD }} --tenant {{ secrets.TENANT }}
+          az login -u ${{ secrets.AZURE_USERNAME }} --service-principal -p ${{ secrets.AZURE_PASSWORD }} --tenant ${{ secrets.TENANT }}
           az account set --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           az aks get-credentials --resource-group hitema_kube --name hitema --overwrite-existing
 
