@@ -1,6 +1,8 @@
 # Utiliser une image de base Python
 FROM python:3.9
 
+RUN pip install flask
+
 # Copier les fichiers nécessaires dans le conteneur
 COPY requirements.txt .
 COPY app.py /app/
