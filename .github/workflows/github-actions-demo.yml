@@ -34,6 +34,7 @@ jobs:
 
       - name: Push image to Docker Hub
         run: docker push marinouh/flashy:latest
+        
 
       - name: Update Kubernetes deployment
         run: kubectl apply -f deployment.yaml  
