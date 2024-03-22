@@ -42,5 +42,5 @@ jobs:
 
       - name: Update Kubernetes deployment
         run: |
-          kubectl set image deployment/magical-marinouh-back magical-marinouh-back=marinouh/flashy:latest
-          kubectl rollout status deployment/magical-marinouh-back
+          kubectl apply -f deployment.yaml  
+          kubectl apply -f service.yaml
