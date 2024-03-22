@@ -17,5 +17,5 @@ RUN pip install flask
 EXPOSE 5000
 
 # Définir la commande par défaut pour exécuter l'application  Flask
-CMD ["python", "app.py"]
+CMD ["python", "app.py"] 
 
