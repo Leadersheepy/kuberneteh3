@@ -9,7 +9,7 @@ COPY requirements.txt .
 COPY app.py /app
 
 # Installer les dépendances Python
-RUN pip3 install Flask
+RUN pip3 install flask
 
 # Exposer le port sur lequel l'application Flask écoute
 EXPOSE 5000
