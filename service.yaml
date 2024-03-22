@@ -7,6 +7,6 @@ spec:
     app: backend  
   ports:
     - protocol: TCP
-      port: 9000
+      port: 4863
       targetPort: 5000
   type: LoadBalancer
